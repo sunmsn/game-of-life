@@ -25,10 +25,6 @@ public enum Cell {
         return symbol;
     }
 
-    @Override
-    public String toStrxing() {
-        return symbol;
-    }
 
 	// Function used for creating a cell given a string
     static Cell fromSymbol(final String symbol) {
