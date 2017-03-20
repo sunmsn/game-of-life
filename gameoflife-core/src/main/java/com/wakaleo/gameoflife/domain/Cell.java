@@ -9,7 +9,7 @@ package com.wakaleo.gameoflife.domain;
  */
 public enum Cell {
 	// Symbols to represent cell status
-    LIVE_CELL("*"), DEAD_CELL(".");
+    LIVE_CELL("+"), DEAD_CELL(".");
 
     private String symbol;
 
@@ -19,12 +19,10 @@ public enum Cell {
 
 	// Override function for easy printing of cell's symbol
 	// Functions identically to default getter ( getSymbol() )
-	// test 
     @Override
     public String toString() {
         return symbol;
     }
-
 
 	// Function used for creating a cell given a string
     static Cell fromSymbol(final String symbol) {
